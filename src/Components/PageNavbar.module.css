@@ -1,0 +1,35 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  box-shadow: 1px 1px 10px rgba(211, 211, 211, 0.5);
+}
+
+.nav ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav ul li a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+.nav ul li a:hover {
+  color: #53f2b0;
+}
+
+.loginBtn{
+    background-color: lightgreen;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #000 !important;
+}
+
+.loginBtn:hover{
+    color: #fff !important;
+}
+
