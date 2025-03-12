@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   padding: 1rem;
-  box-shadow: 1px 1px 10px rgba(211, 211, 211, 0.5);
+  box-shadow: 1px 1px 10px rgba(211, 211, 211, 0.3);
 }
 
 .nav ul {
@@ -23,7 +23,7 @@
 }
 
 .loginBtn{
-    background-color: lightgreen;
+    background-color: #90ee90;
     padding: 5px 10px;
     border-radius: 5px;
     color: #000 !important;
