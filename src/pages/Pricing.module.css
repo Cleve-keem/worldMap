@@ -1,0 +1,28 @@
+.center {
+  min-height: calc(100vh - 88px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pricing {
+    width: 800px;
+  display: flex;
+  gap: 2rem;
+  color: #fff;
+}
+
+.imageContainer {
+  max-width: 300px;
+  /* height: 300px; */
+}
+
+img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+p {
+  line-height: 2;
+}
