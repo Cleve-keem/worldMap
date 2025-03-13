@@ -5,7 +5,9 @@ export default function Pricing() {
   return (
     <div>
       <PageNavbar />
-      Pricing Page
+      <div>
+        <img src="./iain-wells.jpg" alt="" />
+      </div>
     </div>
   );
 }

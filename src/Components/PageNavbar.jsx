@@ -15,7 +15,7 @@ export default function PageNavbar() {
           <NavLink to="/product">Product</NavLink>
         </li>
         <li>
-          <NavLink to="/login" className={styles.loginBtn}>
+          <NavLink to="/login" className={`${styles.loginBtn} green-btn`}>
             Login
           </NavLink>
         </li>

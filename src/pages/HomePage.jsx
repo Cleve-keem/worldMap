@@ -1,6 +1,7 @@
 import React from "react";
 import PageNavbar from "../Components/PageNavbar";
 import styles from "./HomePage.module.css";
+import { Link } from "react-router-dom";
 
 export default function HomePage() {
   return (
@@ -15,7 +16,9 @@ export default function HomePage() {
           of. Never forget your wonderful experiences, and show your friends how
           you have wandered the world.
         </p>
-        <button>START TRACKING NOW</button>
+        <Link to="/login" className={`${styles.homeBtn} green-btn`}>
+          START TRACKING NOW
+        </Link>
       </div>
     </>
   );

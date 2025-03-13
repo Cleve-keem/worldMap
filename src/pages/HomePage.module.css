@@ -20,6 +20,14 @@
   margin-bottom: 1.5rem;
 }
 
-.homePage button{
-    background-color: #90ee90;
+.homeBtn {
+  text-decoration: none;
+  font-weight: 500;
+  border: 1px solid transparent;
 }
+
+.homeBtn:hover {
+  border-color: #646cff;
+  /* color: #000; */
+}
+
