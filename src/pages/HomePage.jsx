@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 export default function HomePage() {
   return (
-    <>
+    <div className={styles.container}>
       <PageNavbar />
       <div className={styles.homePage}>
         <h1>
@@ -20,6 +20,6 @@ export default function HomePage() {
           START TRACKING NOW
         </Link>
       </div>
-    </>
+    </div>
   );
 }

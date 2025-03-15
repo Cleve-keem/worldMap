@@ -1,3 +1,10 @@
+.container {
+  background-image: url(./marina-zasorina.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
 .homePage {
   display: flex;
   flex-direction: column;
@@ -30,4 +37,3 @@
   border-color: #646cff;
   /* color: #000; */
 }
-

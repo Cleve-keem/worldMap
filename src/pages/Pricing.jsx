@@ -4,7 +4,7 @@ import styles from "./Pricing.module.css";
 
 export default function Pricing() {
   return (
-    <div>
+    <div className={styles.container}>
       <PageNavbar />
       <div className={styles.center}>
         <div className={styles.pricing}>
