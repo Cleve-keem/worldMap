@@ -1,0 +1,28 @@
+.nav {
+  margin: 2rem 0 1rem;
+}
+
+.nav ul {
+  list-style-type: none;
+  display: flex;
+  margin: 10px 0;
+  border-radius: 7px;
+  background-color: #333;
+  overflow: hidden;
+}
+
+.nav a:link,
+.nav a:visited {
+  display: block;
+  color: inherit;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+.nav a:global(.active) {
+  background-color: #555;
+}
