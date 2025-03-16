@@ -4,10 +4,10 @@ import HomePage from "./pages/HomePage";
 import Pricing from "./pages/Pricing";
 import Product from "./pages/Product";
 import Login from "./pages/Login";
-import "./App.css";
 import AppLayout from "./pages/AppLayout";
 import PageNotFound from "./pages/PageNotFound";
 import CityList from "./Components/CityList";
+import "./App.css";
 
 export default function App() {
   const [cities, setCities] = useState([]);
@@ -19,9 +19,13 @@ export default function App() {
     async function fetchCities() {
       try {
         setIsLoading(true);
-        const response = await fetch(BASE_URL);
-        const data = await response.json();
-        // console.log(data);
+        const res = await fetch(BASE_URL);
+
+        if (!res.ok) {
+          throw new Error(`HTTP error! Status: ${res.status}`);
+        }
+        const data = await res.json();
+        console.log(data);
         setCities(data);
       } catch (err) {
         console.log(err.message);
