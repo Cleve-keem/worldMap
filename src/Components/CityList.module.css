@@ -1,0 +1,4 @@
+.cityList{
+    display: flex;
+    justify-content: start;
+}
