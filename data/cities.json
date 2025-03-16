@@ -1,0 +1,123 @@
+[
+    {
+      "id": 1,
+      "city_name": "Lagos",
+      "country": "Nigeria",
+      "emoji": "🇳🇬",
+      "date": "2025-03-16",
+      "notes": "A bustling African megacity and economic hub.",
+      "array_position": {
+        "latitude": 6.5244,
+        "longitude": 3.3792
+      }
+    },
+    {
+      "id": 2,
+      "city_name": "Paris",
+      "country": "France",
+      "emoji": "🇫🇷",
+      "date": "2025-03-16",
+      "notes": "The city of lights and love, famous for its art and culture.",
+      "array_position": {
+        "latitude": 48.8566,
+        "longitude": 2.3522
+      }
+    },
+    {
+      "id": 3,
+      "city_name": "Tokyo",
+      "country": "Japan",
+      "emoji": "🇯🇵",
+      "date": "2025-03-16",
+      "notes": "A vibrant city known for technology and sushi.",
+      "array_position": {
+        "latitude": 35.6895,
+        "longitude": 139.6917
+      }
+    },
+    {
+      "id": 4,
+      "city_name": "Sydney",
+      "country": "Australia",
+      "emoji": "🇦🇺",
+      "date": "2025-03-16",
+      "notes": "Home to the iconic Opera House and Harbour Bridge.",
+      "array_position": {
+        "latitude": -33.8688,
+        "longitude": 151.2093
+      }
+    },
+    {
+      "id": 5,
+      "city_name": "New York City",
+      "country": "USA",
+      "emoji": "🇺🇸",
+      "date": "2025-03-16",
+      "notes": "The Big Apple, a global center for culture and finance.",
+      "array_position": {
+        "latitude": 40.7128,
+        "longitude": -74.0060
+      }
+    },
+    {
+      "id": 6,
+      "city_name": "Cape Town",
+      "country": "South Africa",
+      "emoji": "🇿🇦",
+      "date": "2025-03-16",
+      "notes": "Known for its Table Mountain and beautiful beaches.",
+      "array_position": {
+        "latitude": -33.9249,
+        "longitude": 18.4241
+      }
+    },
+    {
+      "id": 7,
+      "city_name": "Moscow",
+      "country": "Russia",
+      "emoji": "🇷🇺",
+      "date": "2025-03-16",
+      "notes": "The capital city famous for Red Square and the Kremlin.",
+      "array_position": {
+        "latitude": 55.7558,
+        "longitude": 37.6173
+      }
+    },
+    {
+      "id": 8,
+      "city_name": "Rio de Janeiro",
+      "country": "Brazil",
+      "emoji": "🇧🇷",
+      "date": "2025-03-16",
+      "notes": "Known for its carnival and the Christ the Redeemer statue.",
+      "array_position": {
+        "latitude": -22.9068,
+        "longitude": -43.1729
+      }
+    },
+    {
+      "id": 9,
+      "city_name": "Dubai",
+      "country": "UAE",
+      "emoji": "🇦🇪",
+      "date": "2025-03-16",
+      "notes": "A luxury shopping destination with futuristic architecture.",
+      "array_position": {
+        "latitude": 25.276987,
+        "longitude": 55.296249
+      }
+    },
+    {
+      "id": 10,
+      "city_name": "Mumbai",
+      "country": "India",
+      "emoji": "🇮🇳",
+      "date": "2025-03-16",
+      "notes": "The heart of Bollywood and a vibrant cultural hotspot.",
+      "array_position": {
+        "latitude": 19.0760,
+        "longitude": 72.8777
+      }
+    }
+  ]
+  
