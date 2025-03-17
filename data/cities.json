@@ -1,6 +1,6 @@
 [
   {
-    "id": 2,
+    "id": 1,
     "cityName": "Paris",
     "country": "France",
     "emoji": "🇫🇷",
@@ -12,7 +12,7 @@
     }
   },
   {
-    "id": 3,
+    "id": 2,
     "cityName": "Tokyo",
     "country": "Japan",
     "emoji": "🇯🇵",
@@ -24,7 +24,7 @@
     }
   },
   {
-    "id": 4,
+    "id": 3,
     "cityName": "Sydney",
     "country": "Australia",
     "emoji": "🇦🇺",
@@ -36,7 +36,7 @@
     }
   },
   {
-    "id": 5,
+    "id": 4,
     "cityName": "New York City",
     "country": "USA",
     "emoji": "🇺🇸",
@@ -48,7 +48,7 @@
     }
   },
   {
-    "id": 6,
+    "id": 5,
     "cityName": "Cape Town",
     "country": "South Africa",
     "emoji": "🇿🇦",
@@ -60,7 +60,7 @@
     }
   },
   {
-    "id": 7,
+    "id": 6,
     "cityName": "Moscow",
     "country": "Russia",
     "emoji": "🇷🇺",
@@ -72,7 +72,7 @@
     }
   },
   {
-    "id": 8,
+    "id": 7,
     "cityName": "Rio de Janeiro",
     "country": "Brazil",
     "emoji": "🇧🇷",
@@ -84,7 +84,7 @@
     }
   },
   {
-    "id": 9,
+    "id": 8,
     "cityName": "Dubai",
     "country": "UAE",
     "emoji": "🇦🇪",

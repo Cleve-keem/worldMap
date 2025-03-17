@@ -7,6 +7,7 @@
     border-radius: 5px;
     padding: 5px 20px;
     margin-bottom: 1rem;
+    cursor: pointer;
 }
 
 .cityItem time{
