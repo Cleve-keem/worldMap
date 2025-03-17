@@ -5,9 +5,10 @@ export default function CityItem({ city }) {
   const { cityName, emoji, date } = city;
   return (
     <li className={styles.cityItem}>
-      <span className={styles.cityName}>{emoji}</span>
+      <span className={styles.cityEmoji}>{emoji}</span>
       <h3 className={styles.cityName}>{cityName}</h3>
-      <time className={styles.cityName}>{date}</time>
+      <time className={styles.cityDate}>{date}</time>
+      <button className={styles.cityDelBtn}>&times;</button>
     </li>
   );
 }

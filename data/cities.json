@@ -1,17 +1,5 @@
 [
   {
-    "id": 1,
-    "cityName": "Lagos",
-    "country": "Nigeria",
-    "emoji": "🇳🇬",
-    "date": "2025-03-16",
-    "notes": "A bustling African megacity and economic hub.",
-    "position": {
-      "latitude": 6.5244,
-      "longitude": 3.3792
-    }
-  },
-  {
     "id": 2,
     "cityName": "Paris",
     "country": "France",
@@ -105,18 +93,6 @@
     "position": {
       "latitude": 25.276987,
       "longitude": 55.296249
-    }
-  },
-  {
-    "id": 10,
-    "cityName": "Mumbai",
-    "country": "India",
-    "emoji": "🇮🇳",
-    "date": "2025-03-16",
-    "notes": "The heart of Bollywood and a vibrant cultural hotspot.",
-    "position": {
-      "latitude": 19.076,
-      "longitude": 72.8777
     }
   }
 ]
