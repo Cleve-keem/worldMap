@@ -1,7 +1,7 @@
 import React from "react";
-import styles from "./CountryList.module.css";
 import Message from "./Message";
 import CountryItem from "./CountryItem";
+import styles from "./CountryList.module.css";
 
 export default function CountryList({ cities, isLoading }) {
   if (isLoading) {
@@ -25,7 +25,7 @@ export default function CountryList({ cities, isLoading }) {
 
   return (
     <div className={styles.countries}>
-      <ul className={styles.CountryList}>
+      <ul className={styles.countryList}>
         {countries.map((country) => (
           <CountryItem country={country} key={country.country} />
         ))}
