@@ -9,12 +9,13 @@ import PageNotFound from "./pages/PageNotFound";
 import CityList from "./Components/CityList";
 import "./App.css";
 import CountryList from "./Components/CountryList";
+import City from "./Components/City";
 
 export default function App() {
   const [cities, setCities] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
 
-  const BASE_URL = "http://localhost:5173/";
+  const BASE_URL = "http://localhost:5174/";
   useEffect(() => {
     async function fetchCities() {
       try {
@@ -52,6 +53,7 @@ export default function App() {
               path="cities"
               element={<CityList cities={cities} isLoading={isLoading} />}
             />
+            <Route path="cities/:id" element={<City />} />
             <Route
               path="countries"
               element={<CountryList cities={cities} isLoading={isLoading} />}
