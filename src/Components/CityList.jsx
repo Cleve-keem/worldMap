@@ -9,11 +9,13 @@ export default function CityList({ cities, isLoading }) {
   }
 
   if (!cities.length) {
-    return <Message message="Add your first city by clicking on a city on the map" />;
+    return (
+      <Message message="Add your first city by clicking on a city on the map" />
+    );
   }
   return (
-    <div className={styles.cityList}>
-      <ul>
+    <div>
+      <ul className={styles.cityList}>
         {cities.map((city) => (
           <CityItem city={city} key={city.id} />
         ))}

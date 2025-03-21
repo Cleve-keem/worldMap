@@ -7,7 +7,6 @@ import Login from "./pages/Login";
 import AppLayout from "./pages/AppLayout";
 import PageNotFound from "./pages/PageNotFound";
 import CityList from "./Components/CityList";
-import "./App.css";
 import CountryList from "./Components/CountryList";
 import City from "./Components/City";
 
