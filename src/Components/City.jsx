@@ -1,6 +1,9 @@
 import React from "react";
 import styles from "./City.module.css";
+import { useParams } from "react-router-dom";
 
 export default function City() {
-  return <div className={styles.city}>City {}</div>;
+  const { id } = useParams();
+  
+  return <p>City</p>;
 }
