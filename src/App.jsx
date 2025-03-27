@@ -9,12 +9,13 @@ import PageNotFound from "./pages/PageNotFound";
 import CityList from "./Components/CityList";
 import CountryList from "./Components/CountryList";
 import City from "./Components/City";
+import Form from "./Components/Form";
 
 export default function App() {
   const [cities, setCities] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
 
-  const BASE_URL = "http://localhost:5174/";
+  const BASE_URL = "http://localhost:5173/";
   useEffect(() => {
     async function fetchCities() {
       try {
@@ -57,7 +58,7 @@ export default function App() {
               path="countries"
               element={<CountryList cities={cities} isLoading={isLoading} />}
             />
-            <Route path="form" element={<p>Form</p>} />
+            <Route path="form" element={<Form />} />
           </Route>
           <Route path="*" element={<PageNotFound />} />
         </Routes>
