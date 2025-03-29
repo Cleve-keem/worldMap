@@ -1,5 +1,5 @@
 .btn{
-    /* color: inherit; */
+    color: inherit;
     text-transform: uppercase;
     padding: 0.5rem 1rem;
     border-radius: 5px;
@@ -15,8 +15,8 @@
 
 .back{
     font-weight: 700;
-    background-color: none;
-    border: 1px solid rgba(0, 0, 0, 0.89);
+    background-color: transparent;
+    border: 1px solid rgba(245, 236, 236, 0.89);
 }
 
 .position{
