@@ -1,0 +1,31 @@
+.btn{
+    /* color: inherit; */
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.primary{
+    font-weight: 700;
+    background-color: rgb(29, 207, 29);
+    color: rgb(14, 10, 10);
+}
+
+.back{
+    font-weight: 700;
+    background-color: none;
+    border: 1px solid rgba(0, 0, 0, 0.89);
+}
+
+.position{
+    font-weight: 700;
+    position: absolute;
+    z-index: 1000;
+    bottom: 3rem;
+    left: 50%;
+    background-color: rgb(29, 207, 29);
+    color: rgb(14, 10, 10);
+    transform: translateX(-50%);
+}
