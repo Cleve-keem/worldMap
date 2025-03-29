@@ -1,5 +1,31 @@
 form{
+    width: 70%;
     background-color: #444;
-    padding: 1rem;
+    padding: 1rem 2rem;
     border-radius: 10px;
+    text-align: left;
+}
+
+form .row{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    gap: 5px;
+}
+
+form .row input{
+    border: 0;
+    padding: 10px 0;
+    border-radius: 5px;
+}
+
+form textarea{
+    height: 100px;
+    border-radius: 5px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
