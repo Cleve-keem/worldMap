@@ -2,7 +2,7 @@ import { createContext, useContext, useEffect, useState } from "react";
 
 const BASE_URL = "http://localhost:5000"; // Base url
 
-const CitiesContext = createContext();
+const CitiesContext = createContext(); 
 
 function CitiesProvider({ children }) {
   const [cities, setCities] = useState([]);
@@ -13,7 +13,7 @@ function CitiesProvider({ children }) {
     async function fetchCities() {
       try {
         setIsLoading(true);
-        const res = await fetch(`${BASE_URL}/data/cities.json`);
+        const res = await fetch(`${BASE_URL}/cities`);
         if (!res.ok) {
           throw new Error(`HTTP error! Status: ${res.status}`);
         }
@@ -31,7 +31,7 @@ function CitiesProvider({ children }) {
   async function getCity(id) {
     try {
       setIsLoading(true);
-      const res = await fetch(`${BASE_URL}/data/cities.json/${id}`);
+      const res = await fetch(`${BASE_URL}/cities/${id}`);
 
       if (!res.ok) {
         throw new Error(`HTTP error! Status: ${res.status}`);

@@ -1,10 +1,8 @@
 import React from "react";
 import styles from "./Form.module.css";
 import Button from "./Button";
-import { useNavigate } from "react-router-dom";
 
 export default function Form() {
-  const navigate = useNavigate();
   return (
     <form className={styles.form}>
       <div className={styles.row}>
@@ -24,15 +22,6 @@ export default function Form() {
 
       <div className={styles.buttons}>
         <Button type="primary">Add</Button>
-        <Button
-          type="back"
-          onClick={(e) => {
-            e.preventDefault();
-            navigate(-1);
-          }}
-        >
-          &larr; Back
-        </Button>
       </div>
     </form>
   );

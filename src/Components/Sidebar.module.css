@@ -1,11 +1,10 @@
 .sidebar{
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
     flex: 1;
     background-color: #222;
     padding: 1rem;
     color: #fff;
-    text-align: center;
+    /* text-align: center; */
 }
