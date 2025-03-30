@@ -16,13 +16,19 @@
     margin-left: auto;
 }
 
+.cityItem-active{
+    border-top: 1px solid rgb(146, 233, 17);
+    border-right: 1px solid rgb(146, 233, 17);
+    border-bottom: 1px solid rgb(146, 233, 17);
+}
+
 .cityItem button {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 20px;
     height: 20px; 
-    font-size: 0.6em;
+    /* font-size: 0.6em; */
     font-weight: bold;
     border: none; 
     border-radius: 50%;
