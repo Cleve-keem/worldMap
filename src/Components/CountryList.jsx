@@ -2,8 +2,11 @@ import React from "react";
 import Message from "./Message";
 import CountryItem from "./CountryItem";
 import styles from "./CountryList.module.css";
+import { useCities } from "../Contexts/CitiesContext";
 
-export default function CountryList({ cities, isLoading }) {
+export default function CountryList() {
+  const { cities, isLoading } = useCities();
+
   if (isLoading) {
     return <p>LOADING...</p>;
   }
