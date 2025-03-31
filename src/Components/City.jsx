@@ -17,8 +17,6 @@ export default function City() {
 
   const { cityName, emoji, date, notes } = currentCity;
 
-  console.log(date);
-
   useEffect(
     function () {
       getCity(id);

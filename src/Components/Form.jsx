@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Form.module.css";
 import Button from "./Button";
+import BackButton from "./BackButton";
 
 export default function Form() {
   return (
@@ -22,6 +23,7 @@ export default function Form() {
 
       <div className={styles.buttons}>
         <Button type="primary">Add</Button>
+        <BackButton />
       </div>
     </form>
   );
