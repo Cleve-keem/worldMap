@@ -1,16 +1,16 @@
 import { useState } from "react";
 
-function useGeolocator() {
-  const [position, setPosition] = useState({});
+function useGeolocator(defaultPosition = null) {
+  const [position, setPosition] = useState(defaultPosition);
   const [isLoading, setIsLoading] = useState(false);
-  const [error, setError] = useState(false);
+  const [error, setError] = useState(null);
 
   function getLocation() {
-    setIsLoading(true);
     if (!navigator.geolocation) {
       console.log("Your bowser no support geolocator");
     }
 
+    setIsLoading(true);
     navigator.geolocation.getCurrentPosition(
       function (position) {
         setPosition({
