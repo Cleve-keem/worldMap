@@ -2,7 +2,7 @@ import { createContext, useContext, useEffect, useState } from "react";
 
 const BASE_URL = "http://localhost:5000"; // Base url
 
-const CitiesContext = createContext(); 
+const CitiesContext = createContext();
 
 function CitiesProvider({ children }) {
   const [cities, setCities] = useState([]);
@@ -45,6 +45,26 @@ function CitiesProvider({ children }) {
     }
   }
 
+  async function createCity(newCityData) {
+    try {
+      setIsLoading(true);
+      const res = await fetch(`${BASE_URL}/cities`, {
+        method: "POST",
+        body: JSON.stringify(newCityData),
+        headers: {
+          "Content-Types": "application/json",
+        },
+      });
+
+      const data = await res.json();
+      setCities((cities) => [...cities, data]);
+    } catch (err) {
+      console.log(err.message);
+    } finally {
+      setIsLoading(false);
+    }
+  }
+
   return (
     <CitiesContext.Provider
       value={{
@@ -52,6 +72,7 @@ function CitiesProvider({ children }) {
         isLoading,
         getCity,
         currentCity,
+        createCity,
       }}
     >
       {children}
