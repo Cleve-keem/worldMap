@@ -1,18 +1,6 @@
 {
   "cities": [
     {
-      "id": "4",
-      "cityName": "Osaka",
-      "country": "Japan",
-      "emoji": "🇯🇵",
-      "date": "2025-03-16",
-      "notes": "Famous for street food and the Osaka Castle.",
-      "position": {
-        "latitude": 34.6937,
-        "longitude": 135.5023
-      }
-    },
-    {
       "id": "7",
       "cityName": "New York City",
       "country": "USA",

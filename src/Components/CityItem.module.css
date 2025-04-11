@@ -23,17 +23,13 @@
 }
 
 .cityItem button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 20px;
-    height: 20px; 
-    /* font-size: 0.6em; */
-    font-weight: bold;
+    width: 12px;
+    height: 12px;
+    font-size: 0.8em;
     border: none; 
     border-radius: 50%;
-    /* padding: 0;  */
-    line-height: 2;
+    padding: 1px;
+    line-height: 0.6;
 }
 
 
