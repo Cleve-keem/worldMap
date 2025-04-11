@@ -7,14 +7,7 @@ import Message from "./Message";
 import DatePicker from "react-datepicker";
 import { useCities } from "../Contexts/CitiesContext";
 import { useNavigate } from "react-router-dom";
-
-export function convertToEmoji(countryCode) {
-  const codePoints = countryCode
-    .toUpperCase()
-    .split("")
-    .map((char) => 127397 + char.charCodeAt());
-  return String.fromCodePoint(...codePoints);
-}
+import { convertToEmoji } from "../utils/convertEmoji";
 
 const BASE_URL = "https://api.bigdatacloud.net/data/reverse-geocode-client";
 
@@ -72,12 +65,11 @@ export default function Form() {
       emoji,
       date,
       notes,
-      position: { lat, lng },
+      position: { latitude: lat, longitude: lng },
     };
 
     await createCity(newCity);
-    navigate("app/cities");
-
+    navigate("/app/cities");
   }
 
   if (isLoadingGeoCoding) return <p>Loading...</p>;
@@ -94,6 +86,7 @@ export default function Form() {
       <div className={styles.row}>
         <label htmlFor="cityName">City Name</label>
         <input
+          id="cityName"
           type="text"
           value={cityName}
           onChange={(e) => setCityName(e.target.value)}
@@ -125,7 +118,9 @@ export default function Form() {
       </div>
 
       <div className={styles.buttons}>
-        <Button type="primary">Add</Button>
+        <Button type="primary" disable={isLoading}>
+          {isLoading ? "Adding..." : "Add"}
+        </Button>
         <BackButton />
       </div>
     </form>
