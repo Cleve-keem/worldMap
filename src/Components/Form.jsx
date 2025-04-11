@@ -40,7 +40,7 @@ export default function Form() {
             throw new Error("This isn't a country, 😊 Click somewhere else");
           }
           setCityName(data.city || data.locality);
-          setCountry(data.country);
+          setCountry(data.countryName);
           setEmoji(convertToEmoji(data.countryCode));
         } catch (error) {
           console.log(error.message);
@@ -67,6 +67,7 @@ export default function Form() {
       notes,
       position: { latitude: lat, longitude: lng },
     };
+
 
     await createCity(newCity);
     navigate("/app/cities");
@@ -97,7 +98,7 @@ export default function Form() {
 
       <div className={styles.row}>
         <label htmlFor="date">
-          When did you go to {cityName} {country}?
+          When did you go to {cityName}, {country}?
         </label>
 
         <DatePicker
@@ -109,7 +110,7 @@ export default function Form() {
       </div>
 
       <div className={styles.row}>
-        <label htmlFor="notes">Notes about your trip to</label>
+        <label htmlFor="notes">Notes about your trip to {cityName}</label>
         <textarea
           id="notes"
           value={notes}

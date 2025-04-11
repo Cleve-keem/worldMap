@@ -17,8 +17,6 @@ export default function CountryList() {
     );
   }
 
-  console.log(cities);
-
   let countries = cities.reduce((arr, city) => {
     if (!arr?.some((item) => item.country === city.country)) {
       arr.push({ country: city.country, emoji: city.emoji });

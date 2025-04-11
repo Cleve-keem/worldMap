@@ -37,14 +37,15 @@
       }
     },
     {
-      "id": "ddd5",
+      "id": "a510",
       "cityName": "Lagos",
+      "country": "Nigeria",
       "emoji": "🇳🇬",
-      "date": "2025-04-11T12:24:31.285Z",
-      "notes": "",
+      "date": "2025-04-11T12:45:52.220Z",
+      "notes": "I went to ikeja to buy phone someday",
       "position": {
-        "latitude": "6.44358852539394",
-        "longitude": "3.4208679199218754"
+        "latitude": "6.6032232351609315",
+        "longitude": "3.3522033691406254"
       }
     }
   ]

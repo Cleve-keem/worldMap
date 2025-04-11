@@ -6,7 +6,7 @@ import { useCities } from "../Contexts/CitiesContext";
 
 export default function CityList() {
   const { cities, isLoading } = useCities();
-  
+
   if (isLoading) {
     return <p>LOADING...</p>;
   }
@@ -17,12 +17,10 @@ export default function CityList() {
     );
   }
   return (
-    <div>
-      <ul className={styles.cityList}>
-        {cities.map((city) => (
-          <CityItem city={city} key={city.id} />
-        ))}
-      </ul>
-    </div>
+    <ul className={styles.cityList}>
+      {cities.map((city) => (
+        <CityItem city={city} key={city.id} />
+      ))}
+    </ul>
   );
 }

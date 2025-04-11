@@ -22,6 +22,7 @@ function reducer(state, action) {
         ...state,
         isLoading: false,
         cities: [...state.cities, action.payload],
+        currentCity: action.payload,
       };
 
     case "city/loaded":
@@ -32,6 +33,7 @@ function reducer(state, action) {
         ...state,
         isLoading: false,
         cities: [...state.cities.filter((city) => city.id !== action.payload)],
+        currentCity: {},
       };
 
     case "rejected":
