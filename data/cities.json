@@ -47,6 +47,18 @@
         "latitude": "6.6032232351609315",
         "longitude": "3.3522033691406254"
       }
+    },
+    {
+      "id": "a294",
+      "cityName": "Kersey-Gill",
+      "country": "United States of America (the)",
+      "emoji": "🇺🇸",
+      "date": "2025-04-12T13:44:02.706Z",
+      "notes": "",
+      "position": {
+        "latitude": "40.43897831022452",
+        "longitude": "-104.54589843750001"
+      }
     }
   ]
 }
