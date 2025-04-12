@@ -1,13 +1,30 @@
 .container {
-  background-image: url(./marina-zasorina.jpg);
-  background-size: cover;
-  background-position: center;
+  background-color: #222;
   color: #fff;
+  min-height: 100vh;
 }
 
-.center {
+.form {
+  width: 400px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: calc(100vh - 62px);
+  flex-direction: column;
+  gap: 1rem;
+  margin: 70px auto 0;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: #444;
+}
+
+.form .row{
+  display: flex;
+  flex-direction: column;
+}
+
+.form label{
+  margin-bottom: 1rem;
+}
+
+.form input{
+  padding: 0.5rem .8rem;
+  outline: none;
 }

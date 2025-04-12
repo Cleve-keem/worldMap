@@ -50,9 +50,8 @@ function AuthProvider({ children }) {
 }
 
 function useAuth() {
-  const context = useContext();
-  console.log(context);
+  const context = useContext(AuthContext);
+  return context;
 }
-
 
 export { AuthProvider, useAuth };
