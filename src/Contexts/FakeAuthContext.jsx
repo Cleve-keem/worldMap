@@ -33,10 +33,12 @@ function AuthProvider({ children }) {
     initialState
   );
 
-  function Login({ email, password }) {
+  function Login(email, password) {
     if (email === FAKE_USER.email && password === FAKE_USER.password) {
-      dispatch({ type: "login" });
+      dispatch({ type: "login", payload: FAKE_USER });
       return "Sent";
+    } else {
+      return "Invalid Credentials";
     }
   }
 

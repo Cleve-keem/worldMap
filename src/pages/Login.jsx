@@ -12,10 +12,13 @@ export default function Login() {
 
   const navigate = useNavigate();
 
-  function handleSubmit(e) {
+  async function handleSubmit(e) {
     e.preventDefault();
 
-    if (email && password) Login(email, password);
+    if (email && password) {
+      const result = Login(email, password);
+      if (result !== "Sent") alert("Invalid Login Credentials");
+    }
   }
 
   useEffect(

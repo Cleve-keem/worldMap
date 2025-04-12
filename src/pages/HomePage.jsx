@@ -16,7 +16,7 @@ export default function HomePage() {
           of. Never forget your wonderful experiences, and show your friends how
           you have wandered the world.
         </p>
-        <Link to="/app" className={`${styles.homeBtn} green-btn`}>
+        <Link to="/login" className={`${styles.homeBtn} green-btn`}>
           START TRACKING NOW
         </Link>
       </div>
