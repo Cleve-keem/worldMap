@@ -15,16 +15,23 @@
   background-color: #444;
 }
 
-.form .row{
+.form .row {
   display: flex;
   flex-direction: column;
 }
 
-.form label{
-  margin-bottom: 1rem;
+.form label {
+  margin-bottom: 5px;
 }
 
-.form input{
-  padding: 0.5rem .8rem;
+.form input {
+  padding: 0.5rem 0.8rem;
   outline: none;
+  border: none;
+  border-radius: 5px;
+}
+
+.form button {
+  padding: 0.6em 1.2em;
+  font-size: 0.8rem;
 }
