@@ -1,5 +1,5 @@
 .container {
-  background-image: url(./marina-zasorina.jpg);
+  background-image: url("/marina-zasorina.jpg");
   background-size: cover;
   background-position: center;
   color: #fff;
