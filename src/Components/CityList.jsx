@@ -3,12 +3,13 @@ import styles from "./CityList.module.css";
 import CityItem from "./CityItem";
 import Message from "./Message";
 import { useCities } from "../Contexts/CitiesContext";
+import Spinner from "./Spinner";
 
 export default function CityList() {
   const { cities, isLoading } = useCities();
 
   if (isLoading) {
-    return <p>LOADING...</p>;
+    return <Spinner />;
   }
 
   if (!cities?.length) {

@@ -3,6 +3,7 @@ import styles from "./City.module.css";
 import { useParams } from "react-router-dom";
 import { useCities } from "../Contexts/CitiesContext";
 import BackButton from "./BackButton";
+import Spinner from "./Spinner";
 
 const formatDate = (date) =>
   new Intl.DateTimeFormat("fr", {
@@ -24,7 +25,7 @@ export default function City() {
     [id]
   );
 
-  if (isLoading) return <p>Loading...</p>;
+  if (isLoading) return <Spinner />;
 
   return (
     <div className={styles.city}>

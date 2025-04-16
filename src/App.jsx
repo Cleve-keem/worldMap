@@ -1,10 +1,6 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import HomePage from "./pages/HomePage";
-import Pricing from "./pages/Pricing";
-import Product from "./pages/Product";
-import Login from "./pages/Login";
-import AppLayout from "./pages/AppLayout";
-import PageNotFound from "./pages/PageNotFound";
+import { lazy, Suspense } from "react";
+
 import CityList from "./Components/CityList";
 import CountryList from "./Components/CountryList";
 import City from "./Components/City";
@@ -12,6 +8,21 @@ import Form from "./Components/Form";
 import { CitiesProvider } from "./Contexts/CitiesContext";
 import { AuthProvider } from "./Contexts/FakeAuthContext";
 import ProtectedRoute from "./pages/ProtectedRoute";
+import Loader from "./Components/Loader";
+
+const HomePage = lazy(() => import("./pages/HomePage"));
+const Pricing = lazy(() => import("./pages/Pricing"));
+const Product = lazy(() => import("./pages/Product"));
+const Login = lazy(() => import("./pages/Login"));
+const AppLayout = lazy(() => import("./pages/AppLayout"));
+const PageNotFound = lazy(() => import("./pages/PageNotFound"));
+
+// import HomePage from "./pages/HomePage";
+// import Pricing from "./pages/Pricing";
+// import Product from "./pages/Product";
+// import Login from "./pages/Login";
+// import AppLayout from "./pages/AppLayout";
+// import PageNotFound from "./pages/PageNotFound";
 
 export default function App() {
   return (
@@ -19,6 +30,7 @@ export default function App() {
       <AuthProvider>
         <CitiesProvider>
           <BrowserRouter>
+          <Suspense fallback={<Loader />}>
             <Routes>
               <Route index element={<HomePage />} />
               <Route path="/pricing" element={<Pricing />} />
@@ -40,6 +52,7 @@ export default function App() {
               </Route>
               <Route path="*" element={<PageNotFound />} />
             </Routes>
+            </Suspense>
           </BrowserRouter>
         </CitiesProvider>
       </AuthProvider>
