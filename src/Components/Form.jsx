@@ -8,7 +8,6 @@ import DatePicker from "react-datepicker";
 import { useCities } from "../Contexts/CitiesContext";
 import { useNavigate } from "react-router-dom";
 import { convertToEmoji } from "../utils/convertEmoji";
-import Loader from "./Loader";
 import Spinner from "./Spinner";
 
 const BASE_URL = "https://api.bigdatacloud.net/data/reverse-geocode-client";
